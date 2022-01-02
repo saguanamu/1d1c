@@ -1,3 +1,6 @@
+import sys
+
+""" quicksort 시간 초과
 def quicksort(list):
     if len(list) <= 1:
         return list
@@ -10,15 +13,16 @@ def quicksort(list):
         else:
             right.append(i)
     return quicksort(left) + [pivot] + quicksort(right)
-
+"""
 N = int(input())
-M = []
+M = [int(sys.stdin.readline())
+     for i in range(N)]
 
-for i in range(N):
-    M.append(int(input()))
+#for i in range(N):
+#    M.append(int(input()))
 
-n = quicksort(M)
-for i in n:
+#n = quicksort(M)
+for i in sorted(M):
     print(i)
 
 # bubble sort
