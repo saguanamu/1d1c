@@ -9,7 +9,7 @@ for _ in range(T):
     arr_data = sys.stdin.readline()[1:-2].split(",")
     queue = deque()
     
-    for each in data:
+    for each in arr_data:
         if each != '':
             queue.append(each)
 
